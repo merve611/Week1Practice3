@@ -11,51 +11,53 @@ Console.Write(" Hangi meyveyi satın almak istersiniz ? (Elma/Armut/Çilek/Muz/D
 
 
 string meyve = Console.ReadLine();
-//if (meyve != null)
-//{
-//    if (meyve.ToLower() == "Elma".ToLower())
-//    {
-//        Console.WriteLine(" Seçtiğiniz meyvenin fiyatı : 2 TL");
-//    }
-//    else if (meyve.ToUpper() == "Armut".ToUpper())
-//    {
-//        Console.WriteLine(" Seçtiğiniz meyvenin fiyatı : 3 TL");
-//    }
-//    else if (meyve.ToUpper() == "Çilek".ToUpper())
-//    {
-//        Console.WriteLine(" Seçtiğiniz meyvenin fiyatı : 2 TL");
-//    }
-//    else if (meyve.ToUpper() == "Muz".ToUpper())
-//    {
-//        Console.WriteLine(" Seçtiğiniz meyvenin fiyatı : 3 TL");
-//    }
-//    else
-//    {
-//        Console.WriteLine("4 TL");
-//    }
-//}     //Bu uygulama için bana göre en mantıklı yöntem switch - case dir. Çünkü birçok olası değer var
-switch (meyve.ToUpper())                                //ToUpper kullanarak girdi de küçükte yazsak duyarsız hale geliyor
+meyve = meyve.ToUpper();
+
+if (meyve != null)
 {
-    case "ELMA":
+    if (meyve == "ELMA")
+    {
         Console.WriteLine(" Seçtiğiniz meyvenin fiyatı : 2 TL");
-        break;
-
-    case "ARMUT":
+    }
+    else if (meyve == "ARMUT")
+    {
         Console.WriteLine(" Seçtiğiniz meyvenin fiyatı : 3 TL");
-        break;
-
-    case "ÇİLEK":
+    }
+    else if (meyve == "ÇİLEK")
+    {
         Console.WriteLine(" Seçtiğiniz meyvenin fiyatı : 2 TL");
-        break;
-
-    case "MUZ":
+    }
+    else if (meyve == "MUZ")
+    {
         Console.WriteLine(" Seçtiğiniz meyvenin fiyatı : 3 TL");
-        break;
- 
-    default:
-        Console.WriteLine(" Seçtiğiniz meyvenin fiyatı : 4 TL");
-        break;
-}
+    }
+    else
+    {
+        Console.WriteLine("4 TL");
+    }
+}     //Bu uygulama için bana göre en mantıklı yöntem switch - case dir. Çünkü birçok olası değer var
+      //switch (meyve.ToUpper())                                //ToUpper kullanarak girdi de küçükte yazsak duyarsız hale geliyor
+      //{
+      //    case "ELMA":
+      //        Console.WriteLine(" Seçtiğiniz meyvenin fiyatı : 2 TL");
+      //        break;
+
+//    case "ARMUT":
+//        Console.WriteLine(" Seçtiğiniz meyvenin fiyatı : 3 TL");
+//        break;
+
+//    case "ÇİLEK":
+//        Console.WriteLine(" Seçtiğiniz meyvenin fiyatı : 2 TL");
+//        break;
+
+//    case "MUZ":
+//        Console.WriteLine(" Seçtiğiniz meyvenin fiyatı : 3 TL");
+//        break;
+
+//    default:
+//        Console.WriteLine(" Seçtiğiniz meyvenin fiyatı : 4 TL");
+//        break;
+//}
 
 
 
